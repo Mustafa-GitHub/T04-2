@@ -23,8 +23,9 @@ This project builds a horizontal bar chart of TV model counts by brand from `dat
 T04-2 used `#content` and `#chart` selectors because `d3.select()` returns the first match, and the header already contains a `div` and an `svg`. T04-7 shortened the `xScale` range so the longest bar and its value label fit inside the viewBox.
 
 ## How to view
-Open with Live Server, because `d3.csv` needs a server.
+Live site: https://t04-2-chi.vercel.app
+
+To run it locally, open with Live Server, because `d3.csv` needs a server.
 
 ## Use of GenAI
 GitHub Copilot applied the code from the tutorial steps, Claude helped review the output and spot the selector and range issues, and I tested and checked every step myself.
-
