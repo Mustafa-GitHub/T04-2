@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,14 +28,23 @@
     </div>
   </header>
 
-  <main id="app" tabindex="-1"></main>
+  <main>
+    <h1>Appliance Energy Consumption</h1>
+    <div id="content"></div>
+    <!-- Give the SVG a size so shapes can be seen -->
+    <svg id="chart" width="300" height="150"></svg>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div><strong>WattWise</strong><span class="footer-rule">/</span> Making every watt count.</div>
-      <div>© <span id="current-year"></span> Muhammad Mustafa ADIL <span class="footer-rule">/</span> Built for COS30045</div>
+      <div>© 2026 Muhammad Mustafa ADIL <span class="footer-rule">/</span> Built for COS30045</div>
       <div class="genai-note">GenAI acknowledgement: GitHub Copilot assisted with code, and Claude assisted with the data story and content drafting.</div>
     </div>
   </footer>
+
+  <!-- Load D3 first, then your D3 code file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="energy-d3.js"></script>
 </body>
 </html>
